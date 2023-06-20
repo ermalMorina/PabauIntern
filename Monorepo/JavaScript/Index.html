@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      id="myForm"
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 30%;
+        border: 5px solid #24bee1;
+        padding: 50px 50px 50px 50px;
+      "
+    >
+      <div>
+        <input type="checkbox" class="checkbox" value="Internship" />
+        <label id="Internship"> Internship </label>
+      </div>
+      <div>
+        <input type="checkbox" class="checkbox" value="Pabau" />
+        <label id="Pabau"> Pabau </label>
+      </div>
+      <div>
+        <input type="checkbox" class="checkbox" value="Employment" />
+        <label id="Employment"> Employment </label>
+      </div>
+      <div>
+        <input type="checkbox" class="checkbox" value="Career" />
+        <label id="Career"> Career </label>
+      </div>
+
+      <br />
+      <!-- button -->
+      <input
+        type="button"
+        value="Shuffle Values"
+        onclick="shufflevalues(event)"
+      />
+      <br />
+      <input
+        type="button"
+        value="Change Values"
+        onclick="changeValues(event)"
+      />
+      <br />
+      <input type="button" value="Show Values" onclick="showValues(event)" />
+      <div id="showValuesContainer"></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
